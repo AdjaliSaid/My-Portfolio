@@ -123,23 +123,23 @@ const projectImages = {
     "./assets/images/appProject2_2.jpg"
   ],
   "Patients list": [
-    "./assets/images/webProject3_1.png",
-    "./assets/images/webProject3_2.png",
-    "./assets/images/webProject3_3.png",
-    "./assets/images/webProject3_4.png",
-    "./assets/images/webProject3_5.png"
+    "./assets/images/webProject3_1.gif",
+    "./assets/images/webProject3_2.gif",
+    "./assets/images/webProject3_3.gif",
+    "./assets/images/webProject3_4.gif",
+    "./assets/images/webProject3_5.gif"
   ],
     "Dashboard": [
-    "./assets/images/webProject2_1.png",
-    "./assets/images/webProject2_2.png"
+    "./assets/images/webProject2_1.gif",
+    "./assets/images/webProject2_2.gif"
   ],
     "Portfolio": [
-    "./assets/images/webProject1_1.png",
-    "./assets/images/webProject1_1,5.png",
-    "./assets/images/webProject1_2.png",
-    "./assets/images/webProject1_3.png",
-    "./assets/images/webProject1_4.png",
-    "./assets/images/webProject1_5.png"
+    "./assets/images/webProject1_1.gif",
+    "./assets/images/webProject1_1,5.gif",
+    "./assets/images/webProject1_2.gif",
+    "./assets/images/webProject1_3.gif",
+    "./assets/images/webProject1_4.gif",
+    "./assets/images/webProject1_5.gif"
   ],
     "To_Do List": [
     "./assets/images/desktop1.png",

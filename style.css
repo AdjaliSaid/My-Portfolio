@@ -109,6 +109,15 @@ a { text-decoration: none; }
 li { list-style: none; }
 
 img, ion-icon, a, button, time, span { display: block; }
+@media only screen and (max-width: 768px) {
+  .profileImage {
+    position: relative;
+    top: -32px;
+  }
+  .info-content {
+    margin-top: -40px;
+  }
+}
 
 button {
   font: inherit;
@@ -288,7 +297,7 @@ main {
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 500px; }
+.sidebar.active { max-height: 600px; }
 
 .sidebar-info {
   position: relative;
