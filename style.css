@@ -728,9 +728,8 @@ main {
 }
 
 .project-item[data-category="android apps"] .project-img img {
-  width: auto; /* Maintain aspect ratio */
+  width: 100%; /* Maintain aspect ratio */
   height: 100%;
-  max-width: 180px; /* Limit width for phone images */
   margin: 0 auto; /* Center the image */
   object-fit: contain; /* Show full image without cropping */
   background: var(--eerie-black-1); /* Background for letterboxing */
