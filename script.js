@@ -93,11 +93,16 @@ const modalImage = document.getElementById("modalImage");
 const closeBtn = document.querySelector(".close");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
+const modalTitle = document.getElementById("modalTitle");
+const modalRole = document.getElementById("modalRole");
+const modalDesc = document.getElementById("modalDesc");
+const modalSkillsList = document.getElementById("modalSkills");
+const modalDots = document.getElementById("modalDots");
 
 let currentImages = [];
 let currentIndex = 0;
 
-// Example project images mapping
+// Project images mapping
 const projectImages = {
   "Doctor booking": [
     "./assets/images/appProject1_1.jpg",
@@ -111,59 +116,135 @@ const projectImages = {
     "./assets/images/appProject1_9.jpg",
     "./assets/images/appProject1_10.jpg",
     "./assets/images/appProject1_11.jpg",
-    "./assets/images/appProject1_12.jpg",
-    "./assets/images/appProject1_13.jpg",
-    "./assets/images/appProject1_14.jpg",
-    "./assets/images/appProject1_15.jpg",
-    "./assets/images/appProject1_16.jpg",
-    "./assets/images/appProject1_17.jpg"
   ],
-  "Calculate the semester average": [
+    "Furniture E-commerce App": [
     "./assets/images/appProject2_1.jpg",
-    "./assets/images/appProject2_2.jpg"
+    "./assets/images/appProject2_2.jpg",
+    "./assets/images/appProject2_3.jpg",
+    "./assets/images/appProject2_4.jpg",
+    "./assets/images/appProject2_5.jpg",
+    "./assets/images/appProject2_6.jpg",
+    "./assets/images/appProject2_7.jpg",
+    "./assets/images/appProject2_8.jpg",
+    "./assets/images/appProject2_9.jpg",
+    "./assets/images/appProject2_10.jpg",
+    "./assets/images/appProject2_11.jpg",
+    "./assets/images/appProject2_12.jpg",
+    "./assets/images/appProject2_13.jpg",
+    "./assets/images/appProject2_14.jpg",
+    "./assets/images/appProject2_15.jpg",
+
   ],
-  "Patients list": [
+  "Furniture E-commerce Admin Panel": [
+    "./assets/images/webProject4_1.png",
+    "./assets/images/webProject4_2.png",
+    "./assets/images/webProject4_3.png",
+    "./assets/images/webProject4_4.png",
+    "./assets/images/webProject4_5.png",
+    "./assets/images/webProject4_6.png",
+    "./assets/images/webProject4_7.png",
+    "./assets/images/webProject4_8.png",
+    "./assets/images/webProject4_9.png"
+  ],
+    "Patients list": [
     "./assets/images/webProject3_1.gif",
     "./assets/images/webProject3_2.gif",
     "./assets/images/webProject3_3.gif",
     "./assets/images/webProject3_4.gif",
     "./assets/images/webProject3_5.gif"
   ],
-    "Dashboard": [
-    "./assets/images/webProject2_1.gif",
-    "./assets/images/webProject2_2.gif"
-  ],
-    "Portfolio": [
+  "Portfolio": [
     "./assets/images/webProject1_1.gif",
     "./assets/images/webProject1_1,5.gif",
     "./assets/images/webProject1_2.gif",
     "./assets/images/webProject1_3.gif",
     "./assets/images/webProject1_4.gif",
     "./assets/images/webProject1_5.gif"
-  ],
-    "To_Do List": [
-    "./assets/images/desktop1.png",
-    "./assets/images/desktop2.png",
-    "./assets/images/desktop3.png",
-    "./assets/images/desktop4.png",
-    "./assets/images/desktop5.png"
   ]
 };
 
+// Project descriptions
+const projectData = {
+  "Doctor booking": {
+    title: "Doctors appointments",
+    role: "I've built the whole project, frontend and backend",
+    description: "A mobile app designed to simplify communication and scheduling between patients and doctors. Patients can book appointments, view available time slots, and receive reminders, while doctors can manage their schedules and consultation times. The app is connected to a backend server for real-time data storage, retrieval, and push notifications using Firebase.",
+    skills: ["Java", "XML", "PHP", "MySQL", "Firebase"]
+  },
+    "Furniture E-commerce App": {
+    title: "🛋️ Furniture E-commerce App",
+    role: "I developed the entire application, including both the frontend (mobile app) and backend (API & database design).",
+    description: "A full-stack furniture e-commerce mobile application that provides users with a smooth and intuitive shopping experience. Customers can browse a wide range of furniture products, filter by categories, view detailed product information, and add items to their cart for purchase. The app also supports secure authentication and allows users to track their orders in real time.",
+    skills: ["Flutter", "Dart", "PHP", "MySQL", "REST APIs","Firebase (Authentication / Notifications)"]
+  },
+    "Furniture E-commerce Admin Panel": {
+    title: "🛋️ Furniture E-commerce Admin Panel",
+    role: "I developed the entire application, including both the frontend (mobile app) and backend (API & database design).",
+    description:"On the admin side, the system includes a complete management panel that enables administrators to :\n\n●   Add, update, and delete products.\n●   Manage categories dynamically.\n●   Monitor and update order statuses     (pending, shipped, delivered, etc.).\n●   Handle inventory and stock levels.\n●   View customer orders and activity.\n\nThe application is powered by a robust backend using RESTful APIs and a relational database, ensuring efficient data handling, scalability, and real-time synchronization between users and administrators.",
+    skills: ["Flutter", "Dart", "PHP", "MySQL", "REST APIs","Firebase (Authentication / Notifications)"]
+  },
+  "Patients list": {
+    title: "Patient Management Platform",
+    role: "Back-end developer",
+    description: "A web platform built with React & Node.js where doctors can add, edit, and delete patient data with a clean, intuitive interface backed by a robust server-side API.",
+    skills: ["Node.js", "React", "MySQL"]
+  },
+  "Portfolio": {
+    title: "Personal Portfolio Website",
+    role: "Full-stack developer & designer",
+    description: "A responsive personal portfolio website built from scratch to showcase projects, skills, and experience. Features smooth navigation, animated sections, a project gallery with modal slideshow, and a clean dark aesthetic crafted with pure HTML, CSS, and JavaScript.",
+    skills: ["HTML", "CSS", "JavaScript"]
+  }
+};
+
+function buildDots(count) {
+  modalDots.innerHTML = '';
+  for (let i = 0; i < count; i++) {
+    const dot = document.createElement('span');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => {
+      currentIndex = i;
+      showImage(currentIndex);
+    });
+    modalDots.appendChild(dot);
+  }
+}
+
+function updateDots(index) {
+  const dots = modalDots.querySelectorAll('span');
+  dots.forEach((d, i) => d.classList.toggle('active', i === index));
+}
+
 function showImage(index) {
   modalImage.src = currentImages[index];
+  updateDots(index);
 }
 
 document.querySelectorAll(".project-item").forEach(item => {
   item.addEventListener("click", e => {
     e.preventDefault();
-    const title = item.querySelector(".project-title").textContent;
+    const title = item.querySelector(".project-title").textContent.trim();
     currentImages = projectImages[title] || [];
     currentIndex = 0;
 
     if (currentImages.length > 0) {
+      // Populate description
+      const data = projectData[title] || {};
+      modalTitle.textContent = data.title || title;
+      modalRole.textContent = data.role || '';
+      modalDesc.innerHTML = (data.description || '').replace(/\n/g, '<br>');
+
+      modalSkillsList.innerHTML = '';
+      (data.skills || []).forEach(skill => {
+        const li = document.createElement('li');
+        li.textContent = skill;
+        modalSkillsList.appendChild(li);
+      });
+
+      buildDots(currentImages.length);
       showImage(currentIndex);
       modal.style.display = "block";
+      document.body.style.overflow = 'hidden';
     }
   });
 });
@@ -179,13 +260,21 @@ prevBtn.addEventListener("click", () => {
   showImage(currentIndex);
 });
 
-// Close modal
-closeBtn.addEventListener("click", () => {
-  modal.style.display = "none";
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+  if (modal.style.display !== 'block') return;
+  if (e.key === 'ArrowRight') { currentIndex = (currentIndex + 1) % currentImages.length; showImage(currentIndex); }
+  if (e.key === 'ArrowLeft') { currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length; showImage(currentIndex); }
+  if (e.key === 'Escape') closeModal();
 });
 
+function closeModal() {
+  modal.style.display = "none";
+  document.body.style.overflow = '';
+}
+
+closeBtn.addEventListener("click", closeModal);
+
 window.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.style.display = "none";
-  }
+  if (e.target === modal) closeModal();
 });
