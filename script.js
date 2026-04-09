@@ -135,6 +135,22 @@ const projectImages = {
     "./assets/images/appProject2_15.jpg",
 
   ],
+  "Online Learning Platform App": [
+    "./assets/images/appProject3_1.png",
+    "./assets/images/appProject3_2.png",
+    "./assets/images/appProject3_3.png",
+    "./assets/images/appProject3_4.png",
+    "./assets/images/appProject3_5.png",
+    "./assets/images/appProject3_6.png",
+    "./assets/images/appProject3_7.png",
+    "./assets/images/appProject3_8.png",
+    "./assets/images/appProject3_9.png",
+    "./assets/images/appProject3_10.png",
+    "./assets/images/appProject3_11.png",
+    "./assets/images/appProject3_12.png",
+    "./assets/images/appProject3_13.png",
+
+  ],
   "Furniture E-commerce Admin Panel": [
     "./assets/images/webProject4_1.png",
     "./assets/images/webProject4_2.png",
@@ -175,6 +191,12 @@ const projectData = {
     title: "🛋️ Furniture E-commerce App",
     role: "I developed the entire application, including both the frontend (mobile app) and backend (API & database design).",
     description: "A full-stack furniture e-commerce mobile application that provides users with a smooth and intuitive shopping experience. Customers can browse a wide range of furniture products, filter by categories, view detailed product information, and add items to their cart for purchase. The app also supports secure authentication and allows users to track their orders in real time.",
+    skills: ["Flutter", "Dart", "PHP", "MySQL", "REST APIs","Firebase (Authentication / Notifications)"]
+  },
+    "Online Learning Platform App": {
+    title: "🎓 Online Learning Platform App",
+    role: "I developed the entire application, including both the frontend (mobile app) and backend (API & database design).",
+    description: "This project is a mobile e-learning app that enables users to discover, enroll in, and manage online courses.\nIt includes:\n\n●   Onboarding & authentication (sign up, login, social login)\n●   Course selection & search with categories and filters\n●   Personalized home dashboard with recommendations and popular courses\n●   Instructor listings to build credibility\n●   User profile & settings for account management",
     skills: ["Flutter", "Dart", "PHP", "MySQL", "REST APIs","Firebase (Authentication / Notifications)"]
   },
     "Furniture E-commerce Admin Panel": {
