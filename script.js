@@ -151,6 +151,29 @@ const projectImages = {
     "./assets/images/appProject3_13.png",
 
   ],
+  "Fitness / Workout App": [
+    "./assets/images/appProject4_1.png",
+    "./assets/images/appProject4_2.png",
+    "./assets/images/appProject4_3.png",
+    "./assets/images/appProject4_4.png",
+    "./assets/images/appProject4_5.png",
+    "./assets/images/appProject4_6.png",
+    "./assets/images/appProject4_7.png",
+    "./assets/images/appProject4_8.png",
+    "./assets/images/appProject4_9.png",
+    "./assets/images/appProject4_10.png",
+    "./assets/images/appProject4_11.png",
+    "./assets/images/appProject4_12.png",
+    "./assets/images/appProject4_13.png",
+    "./assets/images/appProject4_14.png",
+    "./assets/images/appProject4_15.png",
+    "./assets/images/appProject4_16.png",
+    "./assets/images/appProject4_17.png",
+    "./assets/images/appProject4_18.png",
+    "./assets/images/appProject4_19.png",
+    "./assets/images/appProject4_20.png",
+    "./assets/images/appProject4_21.png",
+  ],
   "Furniture E-commerce Admin Panel": [
     "./assets/images/webProject4_1.png",
     "./assets/images/webProject4_2.png",
@@ -199,10 +222,16 @@ const projectData = {
     description: "This project is a mobile e-learning app that enables users to discover, enroll in, and manage online courses.\nIt includes:\n\n●   Onboarding & authentication (sign up, login, social login)\n●   Course selection & search with categories and filters\n●   Personalized home dashboard with recommendations and popular courses\n●   Instructor listings to build credibility\n●   User profile & settings for account management",
     skills: ["Flutter", "Dart", "PHP", "MySQL", "REST APIs","Firebase (Authentication / Notifications)"]
   },
+  "Fitness / Workout App": {
+    title: "🏋️ Fitness / Workout App",
+    role: "I developed the frontend of the application using Flutter.",
+    description: "This project is a mobile e-learning app that enables users to discover, enroll in, and manage online courses.\nIt includes:\n\n●   Onboarding & authentication (sign up, login, social login)\n●   Course selection & search with categories and filters\n●   Personalized home dashboard with recommendations and popular courses\n●   Instructor listings to build credibility\n●   User profile & settings for account management",
+    skills: ["Flutter", "Dart","Firebase (Authentication / Notifications)"]
+  },
     "Furniture E-commerce Admin Panel": {
     title: "🛋️ Furniture E-commerce Admin Panel",
     role: "I developed the entire application, including both the frontend (mobile app) and backend (API & database design).",
-    description:"On the admin side, the system includes a complete management panel that enables administrators to :\n\n●   Add, update, and delete products.\n●   Manage categories dynamically.\n●   Monitor and update order statuses     (pending, shipped, delivered, etc.).\n●   Handle inventory and stock levels.\n●   View customer orders and activity.\n\nThe application is powered by a robust backend using RESTful APIs and a relational database, ensuring efficient data handling, scalability, and real-time synchronization between users and administrators.",
+    description : "This is a fitness app called TrainTrek (or Fitline).\n It helps users with:\n\n●   Workouts – Exercise classes, programs (e.g., “Powerfull Crusher”), and trainer guidance\n●   Tracking – Weight, height, fat mass, steps, and calories burned\n●  Booking – Gym sessions and class schedules\n●   Trainers – Browse and follow fitness experts\n●   Profile & Settings – User info, preferences (country, currency, dark mode), and notifications\n●   Messages & Notifications – Activity updates and chats\n●   Authentication – Sign up, login, and password reset",
     skills: ["Flutter", "Dart", "PHP", "MySQL", "REST APIs","Firebase (Authentication / Notifications)"]
   },
   "Patients list": {
