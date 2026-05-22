@@ -216,6 +216,12 @@ const projectData = {
     description: "A full-stack furniture e-commerce mobile application that provides users with a smooth and intuitive shopping experience. Customers can browse a wide range of furniture products, filter by categories, view detailed product information, and add items to their cart for purchase. The app also supports secure authentication and allows users to track their orders in real time.",
     skills: ["Flutter", "Dart", "PHP", "MySQL", "REST APIs","Firebase (Authentication / Notifications)"]
   },
+    "Furniture E-commerce Admin Panel": {
+    title: "🛋️ Furniture E-commerce Admin Panel",
+    role: "I developed the entire application, including both the frontend (mobile app) and backend (API & database design).",
+    description : "On the admin side, the system includes a complete management panel that enables administrators to :\n\n●   Add, update, and delete products.\n●    Manage categories dynamically.\n●   Monitor and update order statuses (pending, shipped, delivered, etc.).\n●   Handle inventory and stock levels.\n●   View customer orders and activity.\n\n The application is powered by a robust backend using RESTful APIs and a relational database, ensuring efficient data handling, scalability, and real-time synchronization between users and administrators.",
+    skills: ["Flutter", "Dart", "PHP", "MySQL", "REST APIs","Firebase (Authentication / Notifications)"]
+  },
     "Online Learning Platform App": {
     title: "🎓 Online Learning Platform App",
     role: "I developed the entire application, including both the frontend (mobile app) and backend (API & database design).",
@@ -225,14 +231,8 @@ const projectData = {
   "Fitness / Workout App": {
     title: "🏋️ Fitness / Workout App",
     role: "I developed the frontend of the application using Flutter.",
-    description: "This project is a mobile e-learning app that enables users to discover, enroll in, and manage online courses.\nIt includes:\n\n●   Onboarding & authentication (sign up, login, social login)\n●   Course selection & search with categories and filters\n●   Personalized home dashboard with recommendations and popular courses\n●   Instructor listings to build credibility\n●   User profile & settings for account management",
-    skills: ["Flutter", "Dart","Firebase (Authentication / Notifications)"]
-  },
-    "Furniture E-commerce Admin Panel": {
-    title: "🛋️ Furniture E-commerce Admin Panel",
-    role: "I developed the entire application, including both the frontend (mobile app) and backend (API & database design).",
     description : "This is a fitness app called TrainTrek (or Fitline).\n It helps users with:\n\n●   Workouts – Exercise classes, programs (e.g., “Powerfull Crusher”), and trainer guidance\n●   Tracking – Weight, height, fat mass, steps, and calories burned\n●  Booking – Gym sessions and class schedules\n●   Trainers – Browse and follow fitness experts\n●   Profile & Settings – User info, preferences (country, currency, dark mode), and notifications\n●   Messages & Notifications – Activity updates and chats\n●   Authentication – Sign up, login, and password reset",
-    skills: ["Flutter", "Dart", "PHP", "MySQL", "REST APIs","Firebase (Authentication / Notifications)"]
+    skills: ["Flutter", "Dart","Firebase (Authentication / Notifications)"]
   },
   "Patients list": {
     title: "Patient Management Platform",
