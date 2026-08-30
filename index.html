@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adjali Said Portfolio</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img class="profileImage" src="./assets/images/myPicture.webp" alt="Adjali Said" width="90" hight="90" loading="lazy">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Adjali Said">Adjali Said</h1>
+
+          <p class="title">Full-Stack Mobile Developer · Flutter & Laravel</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:saidadjali20@gmail.com" class="contact-link">saidadjali20@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Algeria · Available for Remote Work</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/adjali-said-5b4b91300/?trk=opento_sprofile_goalscard" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/AdjaliSaid" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+
+          <p>
+            I am a mobile application developer specializing in building reliable and scalable applications using Flutter and Laravel. I work on both the mobile and backend sides, including APIs, databases, authentication, notifications, and third-party integrations. I can take a project from development to deployment and maintenance.
+          </p>
+        </section>
+
+        <!--
+          - service
+        -->
+<section class="service">
+
+  <h3 class="h3 service-title">What I Build</h3>
+
+  <ul class="service-list">
+
+    <li class="service-item">
+
+      <div class="service-icon-box">
+        <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+      </div>
+
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Mobile Applications</h4>
+
+        <p class="service-item-text">
+          Cross-platform mobile applications for Android and iOS built with Flutter.
+        </p>
+      </div>
+
+    </li>
+
+    <li class="service-item">
+
+      <div class="service-icon-box">
+        <img src="./assets/images/icon-dev.svg" alt="backend development icon" width="40">
+      </div>
+
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Backend & APIs</h4>
+
+        <p class="service-item-text">
+          Laravel REST APIs, authentication, business logic, and MySQL databases.
+        </p>
+      </div>
+
+    </li>
+
+    <li class="service-item">
+
+      <div class="service-icon-box">
+        <img src="./assets/images/icon-design.svg" alt="integration icon" width="40">
+      </div>
+
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Mobile Integrations</h4>
+
+        <p class="service-item-text">
+          Firebase, notifications, authentication, payments, real-time features, and third-party API integrations.
+        </p>
+      </div>
+
+    </li>
+
+  </ul>
+
+</section>
+
+      </article>
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <a
+          href="./assets/files/Adjali-Said-Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="resume-view-btn"
+        >
+          View Resume
+      </a>
+
+      <section class="timeline">
+
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="briefcase-outline"></ion-icon>
+          </div>
+
+          <h3 class="h3">Experience</h3>
+        </div>
+
+        <ol class="timeline-list">
+
+          <li class="timeline-item">
+
+          <div class="experience-title-row">
+
+            <img
+              src="./assets/images/zynvo-logo.webp"
+              alt="Zynvo app logo"
+              class="experience-app-image"
+            >
+
+            <h4 class="h4 timeline-item-title">
+              Full-Stack Mobile Developer — Zynvo Voice Chat App
+            </h4>
+
+          </div>
+
+            <span>2026</span>
+
+            <p class="timeline-text">
+              Developed the Flutter mobile application and Laravel backend, including REST APIs, MySQL database, authentication, room management, real-time voice communication, messaging, notifications, and deployment support.
+            </p>
+
+            <div class="experience-links">
+
+            <p class="timeline-text">
+              🤖 Android :
+              <a
+                href="https://play.google.com/store/apps/details?id=com.at.dz&hl=fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="experience-link"
+              >
+                Google Play
+              </a>
+            </p>
+
+            <p class="timeline-text">
+              🍎 iOS :
+              <a
+                href="https://apps.apple.com/us/app/my-idoom/id1660522792"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="experience-link"
+              >
+                App Store
+              </a>
+            </p>
+
+            </div>
+
+          </li>
+
+          <li class="timeline-item">
+
+             <div class="experience-title-row">
+
+              <img
+                src="./assets/images/rastlabs-logo.webp"
+                alt="RastLabs app logo"
+                class="experience-app-image"
+              >
+
+              <h4 class="h4 timeline-item-title">
+                Flutter Developer — RastLabs Service Marketplace
+              </h4>
+
+            </div>
+
+              <span>2026</span>
+
+              <p class="timeline-text">
+                Worked on a production Flutter application connected to a Laravel backend, improving and redesigning the mobile UI while preserving the existing architecture, features, APIs, and business logic. Also fixed backend bugs, worked with the MySQL database and Laravel API, handled local project setup and debugging, and supported the App Store release process.
+              </p>
+
+              <p class="timeline-text">
+              🤖 Android :
+              <a
+                href="YOUR_RASTLABS_GOOGLE_PLAY_LINK"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="experience-link"
+              >
+                Google Play
+              </a>
+            </p>
+
+            <p class="timeline-text">
+              🍎 iOS :
+              <a
+                href="https://apps.apple.com/jo/app/rastlabs-%D8%B1%D8%A7%D8%B3%D8%AA-%D9%84%D8%A7%D8%A8%D8%B3/id6760505768"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="experience-link"
+              >
+                App Store
+              </a>
+            </p>
+
+          </li>
+
+        <li class="timeline-item">
+
+          <div class="experience-title-row">
+
+            <img
+              src="./assets/images/myidoom-logo.webp"
+              alt="My Idoom app logo"
+              class="experience-app-image"
+            >
+
+            <h4 class="h4 timeline-item-title">
+              Flutter Developer — Live Application Maintenance
+            </h4>
+
+          </div>
+
+          <span>2025</span>
+
+          <p class="timeline-text">
+            Contributed to the maintenance and improvement of live Flutter applications,
+            including debugging, fixing issues, and supporting production releases.
+          </p>
+
+          <p class="timeline-text">
+            🤖 Android :
+            <a
+              href="https://play.google.com/store/apps/details?id=com.at.dz&hl=fr"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="experience-link"
+            >
+              Google Play
+            </a>
+          </p>
+
+          <p class="timeline-text">
+            🍎 iOS :
+            <a
+              href="https://apps.apple.com/us/app/my-idoom/id1660522792"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="experience-link"
+            >
+              App Store
+            </a>
+          </p>
+
+        </li>
+
+        </ol>
+
+      </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                Bachelor's Degree in Computer Science — Mohamed Khider University of Biskra
+            </h4>
+
+              <span>2022 — 2025</span>
+
+            </li>
+                        <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                Master's Degree in Computer Science — Artificial Intelligence
+            </h4>
+
+              <span>2025 — 2027</span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+<section class="skill">
+
+  <h3 class="h3 skills-title">My Skills</h3>
+
+  <ul class="skills-list content-card">
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <h5 class="h5">Flutter & Dart</h5>
+      </div>
+    </li>
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <h5 class="h5">Laravel & PHP</h5>
+      </div>
+    </li>
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <h5 class="h5">MySQL & REST APIs</h5>
+      </div>
+    </li>
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <h5 class="h5">Firebase & Push Notifications</h5>
+      </div>
+    </li>
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <h5 class="h5">Authentication & Laravel Sanctum</h5>
+      </div>
+    </li>
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <h5 class="h5">Stripe & Payment Integration</h5>
+      </div>
+    </li>
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <h5 class="h5">Agora & Real-Time Communication</h5>
+      </div>
+    </li>
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <h5 class="h5">Git & GitHub</h5>
+      </div>
+    </li>
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <h5 class="h5">Postman & Dio</h5>
+      </div>
+    </li>
+
+    <li class="skills-item">
+      <div class="title-wrapper">
+        <h5 class="h5">Android & iOS Deployment</h5>
+      </div>
+    </li>
+
+  </ul>
+
+</section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Mobile Apps</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web Apps</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-select-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Mobile Apps</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web Apps</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="mobile apps">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/appProject2Interface.webp" alt="DoctorBooking" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Furniture E-commerce App</h3>
+
+                <p class="project-category">Mobile Apps</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mobile apps">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/appProject3Interface.webp" alt="DoctorBooking" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Online Learning Platform App</h3>
+
+                <p class="project-category">Mobile Apps</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mobile apps">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/appProject1Interface.webp" alt="DoctorBooking" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Doctor booking</h3>
+
+                <p class="project-category">Mobile Apps</p>
+
+              </a>
+            </li>
+
+              <li class="project-item  active" data-filter-item data-category="mobile apps">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/appProject4Interface.webp" alt="DoctorBooking" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fitness / Workout App</h3>
+
+                <p class="project-category">Mobile Apps</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="web apps">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/webProject4_5.webp" alt="Patients list" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Furniture E-commerce Admin Panel</h3>
+
+                <p class="project-category">Web Apps</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+    <!-- Modal for project slideshow -->
+    <div id="projectModal" class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-wrapper">
+
+        <!-- Left: description panel -->
+        <div class="modal-description">
+          <h2 class="modal-project-title" id="modalTitle"></h2>
+
+          <div class="modal-role-box">
+            <span class="modal-label">My role.</span>
+            <span id="modalRole"></span>
+          </div>
+
+          <div class="modal-desc-box">
+            <p class="modal-label">Project description.</p>
+            <p id="modalDesc"></p>
+          </div>
+
+          <div class="modal-skills-box" id="modalSkillsBox">
+            <p class="modal-label">Skills &amp; deliverables</p>
+            <ul class="modal-skills-list" id="modalSkills"></ul>
+          </div>
+        </div>
+
+        <!-- Right: image slideshow -->
+        <div class="modal-slideshow">
+          <div class="modal-content">
+            <span class="prev">&#10094;</span>
+            <img id="modalImage" src="" alt="Project image">
+            <span class="next">&#10095;</span>
+          </div>
+          <div class="modal-dots" id="modalDots"></div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
