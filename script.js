@@ -104,6 +104,38 @@ let currentIndex = 0;
 
 // Project images mapping
 const projectImages = {
+  "Zynvo — Voice Chat & Social App": [
+    "./assets/images/appProject6_1.webp",
+    "./assets/images/appProject6_2.webp",
+    "./assets/images/appProject6_3.webp",
+    "./assets/images/appProject6_4.webp",
+    "./assets/images/appProject6_5.webp",
+    "./assets/images/appProject6_6.webp",
+    "./assets/images/appProject6_7.webp",
+    "./assets/images/appProject6_8.webp",
+    "./assets/images/appProject6_9.webp",
+    "./assets/images/appProject6_10.webp",
+    "./assets/images/appProject6_11.webp",
+  ],
+  "RastLabs — Medical Laboratory Booking App": [
+    "./assets/images/appProject5_1.webp",
+    "./assets/images/appProject5_2.webp",
+    "./assets/images/appProject5_3.webp",
+    "./assets/images/appProject5_4.webp",
+    "./assets/images/appProject5_5.webp",
+    "./assets/images/appProject5_6.webp",
+    "./assets/images/appProject5_7.webp",
+    "./assets/images/appProject5_8.webp",
+    "./assets/images/appProject5_9.webp",
+    "./assets/images/appProject5_10.webp",
+    "./assets/images/appProject5_11.webp",
+    "./assets/images/appProject5_12.webp",
+    "./assets/images/appProject5_13.webp",
+    "./assets/images/appProject5_14.webp",
+    "./assets/images/appProject5_15.webp",
+    "./assets/images/appProject5_16.webp",
+    "./assets/images/appProject5_17.webp",
+  ],
   "Doctor booking": [
     "./assets/images/appProject1_1.webp",
     "./assets/images/appProject1_2.webp",
@@ -187,6 +219,53 @@ const projectImages = {
 
 // Project descriptions
 const projectData = {
+  "Zynvo — Voice Chat & Social App": {
+    title: "🎙️ Zynvo — Voice Chat & Social App",
+    role: "I've built the whole project, frontend and backend",
+    description:
+      "Zynvo is a full-stack social voice chat application that allows users to create and join live voice rooms, communicate with others in real time, send private messages, manage friendships, and interact through in-room chat. The app includes different room roles such as owner, moderator, speaker, and listener, along with mute controls, notifications, user profiles, room search, and Google Sign-In. Real-time voice communication is powered by Agora, while Laravel handles authentication, room management, messaging, permissions, and application data.",
+    skills: [
+      "Flutter",
+      "Dart",
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "REST APIs",
+      "Firebase (Authentication / Notifications)",
+      "Google Sign-In",
+      "Agora RTC",
+      "Real-time voice rooms",
+      "Private messaging",
+      "In-room text chat",
+      "User profiles & friendships",
+      "Role & permission management",
+      "Laravel Sanctum",
+      "Push notifications",
+      "Android & iOS development",
+    ],
+  },
+  "RastLabs — Medical Laboratory Booking App": {
+    title: "🧪 RastLabs — Medical Laboratory Booking App",
+    role: "I've built the whole project, frontend and backend",
+    description:
+      "A full-stack medical laboratory booking application that connects users with nearby laboratories and makes it easier to browse medical tests, health packages, prices, and available services. Users can explore laboratories, view detailed test and package information, search and filter services, book appointments, manage their bookings, and interact with provider-specific offers and availability. The platform also includes a provider dashboard for managing services, packages, prices, images, and availability.",
+    skills: [
+      "Flutter",
+      "Dart",
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "REST APIs",
+      "Firebase (Authentication / Notifications)",
+      "Provider Dashboard",
+      "Booking System",
+      "Search & Filtering",
+      "Package & Laboratory Management",
+      "Image & Storage Management",
+      "Payment Gateway Integration",
+      "Google Play / App Store Release Support",
+    ],
+  },
   "Doctor booking": {
     title: "Doctors appointments",
     role: "I've built the whole project, frontend and backend",

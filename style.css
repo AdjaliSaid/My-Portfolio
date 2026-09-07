@@ -282,29 +282,30 @@ article.active {
     0 16px 36px rgba(0, 0, 0, .34),
     0 0 0 1px rgba(255, 255, 255, .06);
   isolation: isolate;
-  animation: avatarFloat 5.2s ease-in-out infinite;
+  animation: avatarFloat 4.4s ease-in-out infinite;
 }
 
 /* Animated premium halo */
 .avatar-box::before {
   content: "";
   position: absolute;
-  inset: -3px;
+  inset: -6px;
   z-index: -1;
   border-radius: 50%;
   background: conic-gradient(
     from 0deg,
-    rgba(255, 213, 106, .07),
-    rgba(255, 213, 106, .34),
-    rgba(255, 255, 255, .10),
-    rgba(255, 194, 56, .24),
-    rgba(255, 213, 106, .07)
+    rgba(255, 213, 106, .14),
+    rgba(255, 213, 106, .48),
+    rgba(255, 255, 255, .16),
+    rgba(255, 194, 56, .34),
+    rgba(255, 213, 106, .14)
   );
   box-shadow:
-    0 0 18px rgba(255, 199, 72, .08),
-    0 0 42px rgba(255, 199, 72, .035);
-  filter: blur(.2px);
-  animation: avatarHaloSpin 20s linear infinite, avatarGlowPulse 6.5s ease-in-out infinite;
+    0 0 28px rgba(255, 199, 72, .14),
+    0 0 68px rgba(255, 199, 72, .08),
+    0 0 110px rgba(255, 199, 72, .035);
+  filter: blur(.35px);
+  animation: avatarHaloSpin 18s linear infinite, avatarGlowPulse 4.8s ease-in-out infinite;
 }
 
 /* Availability indicator */
@@ -352,8 +353,8 @@ article.active {
 }
 
 @keyframes avatarGlowPulse {
-  0%, 100% { opacity: .62; }
-  50% { opacity: .78; }
+  0%, 100% { opacity: .72; }
+  50% { opacity: .98; }
 }
 
 @keyframes avatarFloat {
@@ -1659,14 +1660,15 @@ article.active {
     height: 84px;
     padding: 3px;
     flex-shrink: 0;
-    animation-duration: 5.8s;
+    animation-duration: 4.9s;
   }
 
   .avatar-box::before {
     inset: -2px;
     box-shadow:
-      0 0 12px rgba(255, 199, 72, .055),
-      0 0 28px rgba(255, 199, 72, .02);
+      0 0 18px rgba(255, 199, 72, .10),
+      0 0 38px rgba(255, 199, 72, .045),
+      0 0 60px rgba(255, 199, 72, .02);
   }
 
   .avatar-box::after {
