@@ -104,6 +104,21 @@ let currentIndex = 0;
 
 // Project images mapping
 const projectImages = {
+  "Loora — Live Streaming, PK Battles & Social Entertainment App": [
+    "./assets/images/appProject7_1.webp",
+    "./assets/images/appProject7_2.webp",
+    "./assets/images/appProject7_3.webp",
+    "./assets/images/appProject7_4.webp",
+    "./assets/images/appProject7_5.webp",
+    "./assets/images/appProject7_6.webp",
+    "./assets/images/appProject7_7.webp",
+    "./assets/images/appProject7_8.webp",
+    "./assets/images/appProject7_9.webp",
+    "./assets/images/appProject7_10.webp",
+    "./assets/images/appProject7_11.webp",
+    "./assets/images/appProject7_12.webp",
+    "./assets/images/appProject7_13.webp",
+  ],
   "Zynvo — Voice Chat & Social App": [
     "./assets/images/appProject6_1.webp",
     "./assets/images/appProject6_2.webp",
@@ -219,6 +234,32 @@ const projectImages = {
 
 // Project descriptions
 const projectData = {
+  "Loora — Live Streaming, PK Battles & Social Entertainment App": {
+    title: "🎥 Loora — Live Streaming, PK Battles & Social Entertainment App",
+    role: "I developed the frontend of the application using Flutter.",
+    description:
+      "Loora is a feature-rich social entertainment application that combines live streaming, real-time interactions, social networking, and interactive entertainment in one platform. Users can discover live streams, broadcast their own content, participate in PK battles, join interactive communities, share moments, publish short videos, and connect with other users through private messaging and video calls. The application also includes virtual gifts, an in-app coin system, payment gateway interfaces, user rankings, personalized profiles, and a virtual store where users can explore avatar frames, party themes, and custom rides. With its extensive social and entertainment features, Loora provides a customizable Flutter frontend foundation for businesses looking to build their own branded live-streaming platform.",
+    skills: [
+      "Flutter",
+      "Dart",
+      "Payment gateway interfaces",
+      "Short video feed",
+      "PK Battle interfaces",
+      "Live-streaming interfaces",
+      "Social posts, likes & comments",
+      "Firebase (Authentication / Notifications)",
+      "Google Sign-In",
+      "Agora RTC",
+      "Virtual gifts & reactions",
+      "Real-time voice rooms",
+      "Private messaging",
+      "In-room text chat",
+      "User profiles & friendships",
+      "Role & permission management",
+      "Push notifications",
+      "Android & iOS development",
+    ],
+  },
   "Zynvo — Voice Chat & Social App": {
     title: "🎙️ Zynvo — Voice Chat & Social App",
     role: "I've built the whole project, frontend and backend",
